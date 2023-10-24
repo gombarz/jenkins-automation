@@ -9,7 +9,7 @@ pipeline {
                 echo "Building.."
                 sh '''
                 cd myapp
-                sudo dnf install python3-pip
+                dnf install python3-pip
                 pip install -r requirements.txt
                 '''
             }
