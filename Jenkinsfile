@@ -8,8 +8,7 @@ pipeline {
             steps {
                 echo "Building.."
                 sh '''
-                cd myapp
-                sudo -S dnf install python3-pip
+                cd myapp                
                 pip install -r requirements.txt
                 '''
             }
@@ -20,7 +19,7 @@ pipeline {
                 sh '''
                 cd myapp
                 python3 hello.py
-                python3 hello.py --name=Brad
+                python3 hello.py --name=Zoltán
                 '''
             }
         }
